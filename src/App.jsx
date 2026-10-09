@@ -1385,7 +1385,13 @@ export default function App() {
           {!downloading && !downloadComplete && (
             <button className="header-cta-btn" style={{ width: '100%', justifyContent: 'center', padding: '14px' }} onClick={handleDownload}>
               <img src={logo} alt="Logo" className="logo-img"/>
-              Lancer le téléchargement direct
+              <a 
+                href="/tressbit.apk" 
+                download="TressBit.apk"
+                className="primary-cta-btn"
+              >
+                <Download size={20} /> Télécharger l'APK
+              </a>
             </button>
           )}
 
