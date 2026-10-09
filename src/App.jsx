@@ -1153,7 +1153,7 @@ export default function App() {
       <header>
         <a href="#" className="logo-container">
           <div className="logo-img-wrapper">
-            <img src="logo.png" alt="TressBit Logo" className="logo-img" onError={(e)=>{e.target.src='https://placehold.co/100x100/041208/95B8C0?text=TB'}} />
+            <img src="logo.png" alt="TressBit Logo" className="logo-img"  />
           </div>
           <span className="brand-title">TressBit</span>
         </a>
