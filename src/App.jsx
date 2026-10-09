@@ -1229,7 +1229,7 @@ export default function App() {
           <div className="mascot-display-card">
             <div className="ghost-halo"></div>
             <img 
-              src={ghost.png} 
+              src={ghost} 
               alt="TressBit Ghost Mascot" 
               className="ghost-mascot-img"
               onError={(e)=>{e.target.src='https://placehold.co/180x180/071A0E/95B8C0?text=Ghost'}} 
