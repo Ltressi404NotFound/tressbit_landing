@@ -1153,12 +1153,12 @@ export default function App() {
       <header>
         <a href="#" className="logo-container">
           <div className="logo-img-wrapper">
-            <img src="logo.png" alt="TressBit Logo" className="logo-img"  />
+            <img src="./logo.png" alt="TressBit Logo" className="logo-img"  />
           </div>
           <span className="brand-title">TressBit</span>
         </a>
         <button className="header-cta-btn" onClick={() => setDownloadModalOpen(true)}>
-          <img src="logo.png" alt="Logo" className="header-cta-logo" onError={(e)=>{e.target.src='https://placehold.co/40x40/041208/95B8C0?text=TB'}} />
+          <img src="./logo.png" alt="Logo" className="header-cta-logo" onError={(e)=>{e.target.src='https://placehold.co/40x40/041208/95B8C0?text=TB'}} />
           Télécharger l'APK
         </button>
       </header>
@@ -1178,7 +1178,7 @@ export default function App() {
           </p>
           <div className="hero-cta-group">
             <button className="btn-massive-download" onClick={() => setDownloadModalOpen(true)}>
-              <img src="logo.png" alt="Logo" className="btn-massive-logo" onError={(e)=>{e.target.src='https://placehold.co/40x40/041208/95B8C0?text=TB'}} />
+              <img src="./logo.png" alt="Logo" className="btn-massive-logo" onError={(e)=>{e.target.src='https://placehold.co/40x40/041208/95B8C0?text=TB'}} />
               Télécharger l'APK Android
             </button>
             <button className="btn-secondary-explore" onClick={() => {
@@ -1195,7 +1195,7 @@ export default function App() {
           <div className="cyber-vinyl-disc">
             <div className="cyber-vinyl-grooves"></div>
             <div className="cyber-vinyl-label">
-              <img src="logo.png" alt="TressBit" onError={(e)=>{e.target.src='https://placehold.co/100x100/041208/95B8C0?text=TB'}} />
+              <img src="./logo.png" alt="TressBit" onError={(e)=>{e.target.src='https://placehold.co/100x100/041208/95B8C0?text=TB'}} />
             </div>
           </div>
 
@@ -1227,7 +1227,7 @@ export default function App() {
           <div className="mascot-display-card">
             <div className="ghost-halo"></div>
             <img 
-              src="ghoast.png" 
+              src="./ghoast.png" 
               alt="TressBit Ghost Mascot" 
               className="ghost-mascot-img"
               onError={(e)=>{e.target.src='https://placehold.co/180x180/071A0E/95B8C0?text=Ghost'}} 
@@ -1310,7 +1310,7 @@ export default function App() {
             Téléchargez l'APK TressBit dès maintenant. Aucune inscription, aucun profil requis et aucune collecte de données personnelles.
           </p>
           <button className="btn-massive-download" style={{ margin: '0 auto', width: 'fit-content' }} onClick={() => setDownloadModalOpen(true)}>
-            <img src="logo.png" alt="Logo" className="btn-massive-logo" onError={(e)=>{e.target.src='https://placehold.co/40x40/041208/95B8C0?text=TB'}} />
+            <img src="./logo.png" alt="Logo" className="btn-massive-logo" onError={(e)=>{e.target.src='https://placehold.co/40x40/041208/95B8C0?text=TB'}} />
             Télécharger l'APK Sécurisé
           </button>
 
@@ -1337,7 +1337,7 @@ export default function App() {
           <button className="modal-close-btn" onClick={() => setDownloadModalOpen(false)}>&times;</button>
           
           <img 
-            src="logo.png" 
+            src="./logo.png" 
             alt="TressBit Logo" 
             className="modal-brand-logo"
             onError={(e)=>{e.target.src='https://placehold.co/100x100/041208/95B8C0?text=TB'}} 
@@ -1350,7 +1350,7 @@ export default function App() {
 
           {!downloading && !downloadComplete && (
             <button className="header-cta-btn" style={{ width: '100%', justifyContent: 'center', padding: '14px' }} onClick={handleDownload}>
-              <img src="logo.png" alt="Logo" style={{width: 18, height: 18, objectFit: 'contain'}} onError={(e)=>{e.target.src='https://placehold.co/40x40/041208/95B8C0?text=TB'}} />
+              <img src="./logo.png" alt="Logo" style={{width: 18, height: 18, objectFit: 'contain'}} onError={(e)=>{e.target.src='https://placehold.co/40x40/041208/95B8C0?text=TB'}} />
               Lancer le téléchargement direct
             </button>
           )}
