@@ -170,6 +170,20 @@ export default function App() {
           gap: 12px;
           text-decoration: none;
         }
+          .primary-cta-btn {
+  background-color: transparent;
+  color: #041208;
+  font-weight: 900;
+  padding: 16px 36px;
+  border-radius: 18px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
 
         .logo-img-wrapper {
           position: relative;
@@ -1161,7 +1175,13 @@ export default function App() {
         </a>
         <button className="header-cta-btn" onClick={() => setDownloadModalOpen(true)}>
         <img src={logo} alt="Logo" className="logo-img"/>
-          Télécharger l'APK
+          <a 
+            href="/tressbit.apk" 
+            download="TressBit.apk"
+            className="primary-cta-btn"
+          >
+            <Download size={20} /> Télécharger l'APK
+          </a>
         </button>
       </header>
 
@@ -1181,7 +1201,13 @@ export default function App() {
           <div className="hero-cta-group">
             <button className="btn-massive-download" onClick={() => setDownloadModalOpen(true)}>
             <img src={logo} alt="Logo" className="logo-img"/>
-              Télécharger l'APK Android
+            <a 
+              href="/tressbit.apk" 
+              download="TressBit.apk"
+              className="primary-cta-btn"
+            >
+              <Download size={20} /> Télécharger l'APK
+            </a>
             </button>
             <button className="btn-secondary-explore" onClick={() => {
               const el = document.getElementById('features');
@@ -1313,7 +1339,13 @@ export default function App() {
           </p>
           <button className="btn-massive-download" style={{ margin: '0 auto', width: 'fit-content' }} onClick={() => setDownloadModalOpen(true)}>
           <img src={logo} alt="Logo" className="logo-img"/>
-            Télécharger l'APK Sécurisé
+          <a 
+            href="/tressbit.apk" 
+            download="TressBit.apk"
+            className="primary-cta-btn"
+          >
+            <Download size={20} /> Télécharger l'APK
+          </a>
           </button>
 
           <div className="offline-assurance-pills">
